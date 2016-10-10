@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*尾部倒数第三部分*/
+#da_footer{width: auto;min-width: 1200px;}
+#da_footer .foot_list{width: 1200px;margin: 0 auto;}   
+#da_footer .list{padding:0 50px;overflow: hidden;height: 80px;border-bottom: 3px solid #CCCCCC;line-height: 80px;border-top: 1px solid #ccc;min-width: 1200px;}
+#da_footer .foot_list li{float: left;margin: 0  0 0 115px ;font-size: 14px;height: 80px;} 
+#da_footer .foot_list .dl_select,#da_footer .foot_list .dl_brand,#da_footer .foot_list .dl_goods,#da_footer .foot_list .dl_product{margin-left:20px;display: inline-block;vertical-align: middle;}
+#da_footer .foot_list .dl_select{width: 25px;height: 41px; background: url(../img/ico_arrow.png) no-repeat left -135px;}
+#da_footer .foot_list .dl_brand{width: 35px;height: 31px; background: url(../img/ico-assure.png) no-repeat left  bottom;}  
+#da_footer .foot_list .dl_goods{width: 35px;height: 31px; background: url(../img/ico-assure.png) no-repeat -36px bottom;}
+#da_footer .foot_list .dl_product{width: 35px;height: 31px; background: url(../img/ico-assure.png) no-repeat -70px bottom;}
+/*尾部倒数第二部分*/ 
+#da_footer .content_footer{border-bottom: 1px solid #CCCCCC;}  
+.da_footer_content{height:110px;width: 1200px;margin: 0 auto;line-height:30px;font-size: 14px; padding-top:30px;overflow: hidden;}
+.da_footer_content .first{float: left;width: 550px;margin-right:50px;}  
+.da_footer_content .second{float: right; width: 400px;}  
+.da_footer_content dt{font-size: 20px;}    
+/*尾部版权部分的内容*/  
+.da-copyright{padding-top: 20px;width: 1200px;margin: 0 auto;height: 120px;text-align: center;padding-bottom: 20px;}
+.da-copyright .copy{text-align: center;margin: 0 auto;}
+.copy td a{display: inline-block;float: left;margin: 20px;} 

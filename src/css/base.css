@@ -1,0 +1,11 @@
+@charset "utf-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input { margin:0; padding:0;border: none; }
+fieldset, img { border:none; }
+body{font-size: 12px;font-family:'微软雅黑';}
+img{display: block;}
+ul, ol { list-style:none; } 
+a { color:#666; text-decoration:none; } 
+a:hover, a:active, a:focus { color:#FF0000; text-decoration:underline; }  
+
+
+/**************所有页面公用的样式**************************************/

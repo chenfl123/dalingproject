@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>   
+		<meta charset="UTF-8">  
+		<title>登录</title> 
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>  
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/cookies.js"></script>
+		
+	</head>
+	<body> 
+		<!-----logo图---------> 
+		<div id="login_logo">
+			<div class="logo"><a href="../index.html"><img src="../img/logo.png"/> </a></div> 
+		</div>
+		 <!-------内容---------------------------->
+		<div class="login_content">   
+			<div class="content"> 
+				<!-------------表单框------------------->  
+				<div id="content_form">
+					<h2><span class="member"></span>达令会员</h2>  
+					<p class="login_register"><a href="login.html" class="login active" >登录</a><a href="registe.html"  class="regsiter">注册</a></p>
+						<!--登录-->
+					<form  class="dl_login" ><!--action="../index.html" method="get"-->
+						<div class="dl_user"> 
+							<span class="user"></span>   
+						    <input type="text" name="username" id="username" placeholder="请输入您的手机号"/>
+						</div>
+						<!--密码-->
+						 <div class="dl_password">
+						 	<span class="pass"></span>   
+							<input type="password" name="passcheck" id="passcheck" placeholder="请输入密码" />	
+						 </div>
+						 <!--忘记密码?-->
+						<p class="forget"><a href="#">忘记密码？</a></p> 
+						<button  type="button" class="submit_btn">登录</button>
+					</form>
+					<!--注册-->
+					
+				</div>
+			</div>
+		</div>
+		<div id="da_footer">
+			   
+		</div>
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script>
+			jQuery(function($){
+				//导入尾部
+				$("#da_footer").load("footer.html");
+				//登录的初始化状态
+					$(".dl_login").show();
+					$(".regsiter").removeClass("active");
+					$(".dl_login").addClass("active");
+			//----------------------------
+			});
+		</script>
+		<script src="../js/login.js"></script>
+	</body>
+</html>

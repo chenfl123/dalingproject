@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<meta charset="UTF-8">  
+		<title>购物车</title> 
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopcar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<script src="../assets/jquery-1.12.0.js"></script> 
+		<script src="../js/cookies.js"></script>
+		
+	</head>
+  
+	<body> 
+		<div id="dl_header"></div> 
+		<script>
+			jQuery(function($){
+				$("#dl_header").load("header.html .dl_header_inner ")
+			});
+		</script> 
+		<div class="da-cart"> 
+			<div class="cart-top">
+				<a class="logo" href="../index.html"></a>
+				<div class="cart-step">
+					<ul>
+						<ul>
+							<li class="step-1 current">
+								<span class="triangle"></span>
+								<span class="icon-number">1</span>查看购物车
+							</li>
+							<li class="step-2">
+								<span class="triangle"></span>
+								<span class="icon-number">2</span>确认订单信息
+								<span class="icon-to"></span>
+							</li>
+							<li class="step-3">
+								<span class="triangle"></span>
+								<span class="icon-number">3</span>成功提交订单
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="carlist"> 
+			<div class="cart-thead">
+        	<ul>
+            <li class="th th-check">
+                <label>
+                    <input type="checkbox" class="check"  /> 全选
+                </label>
+            </li>
+            <li class="th th-name"> 商品名称 </li>
+            <li class="th th-price"> 单价（元） </li>
+            <li class="th th-number">  数量</li>
+            <li class="th th-total">  小计（元） </li>
+            <li class="th th-handle"> 操作 </li>
+        </ul>
+   </div>  
+   <div class="data_list">
+   </div>
+        <table cellspacing="0" cellpadding="0" class="date-empty">
+            <tr> 
+                <td align="center" valign="middle">
+                    <strong></strong>
+                    <span>购物车空空的哦~，去看看心仪的商品吧~<br/><a href="/">去购物></a></span>
+                </td>
+            </tr>
+        </table>
+        <!---->
+       <!--总计-->
+    <div>
+        <div class="total-box">
+            <label class="sel-all">
+                <input class="checkb" type="checkbox" />
+       				         全选
+            </label>
+            <div class="option">
+                <a href="javascript:;">删除选中的商品</a>
+                <a href="javascript:;" >移到我的收藏</a>
+            </div>
+            <div class="toolbar clearfix">
+                <a href="/" class="btn-count" >去结算</a>
+
+                <div class="total-count">
+                    <p><span class="item">总金额：</span><span class="sumprice" style="color: red;">&yen<span class="f20" >0.00</span></span>
+                    </p>
+
+                    <p><span class="item">已节省：</span>-&yen<span class="f11">0.00</span></p>
+                </div>
+                <div class="ammount">已选中<span class="rede1" >0</span>件商品</div> 
+            </div>
+        </div>
+    </div>
+    <!--我的收藏-->
+    
+    <div class="cart-collection">
+        <div class="title"><p>我的收藏</p></div>
+                <table cellspacing="0" cellpadding="0" class="data-empty1 data-empty2">
+            <tr><td>登陆后才能查看收藏的全球好货哦~</td></tr>
+            <tr><td align="center"><a href="javascript:void(0)">登录></a></td></tr>
+        </table>
+            </div>
+
+</div>
+        
+	</div>
+		<!---->
+		<div id="da_footer">
+		</div>
+		<script>
+			jQuery(function($){
+				$("#da_footer").load("footer.html");
+			});
+		</script>
+		<script src="../js/shopcar.js"></script> 
+	</body>
+
+</html>

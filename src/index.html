@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />   
+		<title>达令™一跨境购海淘APP网站</title>
+		<meta name="keywords" content="达令,达令™,鹿晗,海淘,礼物店,跨境购,代购,全球购,跨境电商,海外直邮,达令礼物店,达令APP,达令官网">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="assets/jquery-1.12.0.js"></script>
+		<script src="js/cookies.js"></script>
+	</head>    
+	<body> 
+		<!--头部内容加载-->
+		<div id="da_header">
+
+		</div>
+		<script>
+			jQuery(function($) {
+				$("#da_header").load("../src/html/header.html",function(){
+					$(".shop_car a").attr({"href":"../src/html/shopcar.html"});
+					//获取用户
+					var user=getCookie("user");  
+					console.log(user)
+					if(user){
+						$(".user_code").text("欢迎用户 "+user); 
+					}
+				});
+			});
+		</script> 
+	<div id="dl_bg"> 
+
+		<!---------dl_content---轮播图---------------------->
+		<div id="dl_content">
+			<!-----------轮播图---------------------->
+			<div class="dl_carousel">
+				<!--<ul>
+					<li class="img1"><img src="img/banner1.jpg" alt="每天一面膜" /></li>
+					<li class="img2"><img src="img/banner2.jpg" alt="无敌价，降到底" /></li>
+					<li class="img3"><img src="img/banner3.jpg" alt="全家出游季" /></li>
+				</ul>-->
+			</div>
+			<!------------------------>
+		</div> 
+		<!-----------内部内容开始------------------>
+		<div id="dl_main">
+			<div class="index_title">
+				<p>发现好货</p>
+			</div>
+			<!--今日必看-->   
+			<div id="index_must">
+				<h2><span class="title_must"></span>今日必看 <span class="evey_see">每天逛一圈</span></h2>
+				<ul class="box"> 
+					<li>
+						<div  title="9.26家配" class="cover_img926" style="background: url(images/contan1.jpg) no-repeat;">
+						</div>
+					</li>
+					<li>
+						<div title="9.2零食" class="cover_img926" style="background: url(images/contan2.jpg) no-repeat;">
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			 <!--今日上新------------------------>
+			 <div id="index_new">
+				<h2><a href="javascript:;" class="change">换一批<span class="new-chage"></span></a>
+					<span class="title_new"></span>今日上新 <span class="evey_see">早八点上新</span></h2>
+				<div class="new_box"> 
+					<ul class="new_list_mix">
+						<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">
+                           				 [韩国 · 皮肤细嫩青春常驻] sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv2.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[意大利 · 优雅贵族典范] 范诗哲   云淡风清男士香水(30ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/mc1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[日本 · 烘培的艺术品]  波路梦  波路梦什锦曲奇饼干60枚(306g 什锦曲奇)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv4.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">圣贵兰意大利即溶咖啡粉-特级香浓咖啡 100g</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+					<ul class="new_list_max"> 
+						<li>
+							<a href="#">
+								<img src="images/d3.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/d3.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+				
+					
+			
+					<ul class="new_list_mix" style="display: none;">
+						<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/b2.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[设计师 · 时尚潮流小脚裤]   曼彩绘绣  韩版单宽条宽松小脚休闲裤黑色(S)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/mc1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[美国 · 气质修身女神必备] AFDP  波点印花荷叶边气质修身连衣裙铁锈红(F)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv3.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[日本 · 烘培的艺术品]  波路梦  波路梦什锦曲奇饼干60枚(306g 什锦曲奇)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv4.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span> 
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">圣贵兰意大利即溶咖啡粉-特级香浓咖啡 100g</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+				    <ul class="new_list_max" style="display: none;">
+						<li>
+							<a href="#">
+								<img src="images/bt1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li> 
+							<a href="#">
+								<img src="images/b16.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+				
+				    <ul class="new_list_mix" style="display: none;">
+						<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/b17.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">  
+								<img src="images/nv2.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[意大利 · 优雅贵族典范] 范诗哲   云淡风清男士香水(30ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv3.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[日本 · 烘培的艺术品]  波路梦  波路梦什锦曲奇饼干60枚(306g 什锦曲奇)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv4.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">圣贵兰意大利即溶咖啡粉-特级香浓咖啡 100g</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+			    	<ul class="new_list_max" style="display: none;">
+						<li>
+							<a href="#">
+								<img src="images/bt5.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/b16.jpg"/> 
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>
+				</div> 
+			</div>
+			   <!--神马值得买-->
+			 <div class="value_buy">
+			 	 <h2><span class="title-worth"></span>神马值得买<span class="help_pic">帮你挑选全球好货</span></h2>
+			 	 <h3><span class="ico-title-1" ></span>全球好货</h3>
+			 	 <div class="worth-box">
+			 	 	 <div class="country-box">
+			 	 		<ul>
+			 	 			<li><a href="html/list.html"><img src="images/cn1.jpg"/></a></li>
+			 	 			<li><a href="html/list.html"><img src="images/cn2.jpg"/></a></li>
+			 	 			<li><a href="html/list.html"><img src="images/cn3.jpg"/></a></li>
+			 	 			<li><a href="html/list.html"><img src="images/cn4.jpg"/></a></li> 
+			 	 			<li><a href="html/list.html"><img src="images/cn5.jpg"/></a></li>
+			 	 		</ul>
+			 	 </div> 
+			 	 </div>
+			 </div>
+			 <!-----大家都说好---------->
+			<h3 class="say_good"><span class="ico-title-1"></span>大家都说好</h3>
+			<div class="index-good">
+				<div class="good_tab">
+					<ul>
+						 <li class="current" data-toggle-tab="tab-1-0"> 全部商品  </li>
+                         <li > 极致美护</li>
+                         <li > 全球零食</li>
+                         <li > 创意生活 </li>
+                         <li > 时尚配饰 </li>
+                         <li > 3C数码  </li>
+                    </ul>
+				</div>
+				<div class="good_list">
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/bt1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/D22K.jpg"/> 
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/bt9.jpg"/> 
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/cy7.jpg"/> 
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+				<!---->	
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/bt1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/ft2.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/cy4.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/cy1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/gt1.jpg"/>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/FTLKR7.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/gt5.jpg"/>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/gt6.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+					<ul>
+							<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/b4.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00.00</span>
+									<span class="old_price">&yen;199.00.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div>  
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/s1.jpg"/> 
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li> 
+							<a href="../src/html/detail.html"> 
+								<img src="images/gt5.jpg"/>
+							</a>
+							<div class="date">  
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" >  
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/gt6.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                        	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                         	<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span> 
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div> 
+						</li>
+                    </ul>
+				    
+				<!---->
+				</div>
+			</div>
+		<!--买了又买-->
+			<h3 class="say_good"><span class="ico-title-1"></span>买了又买</h3>
+			<div class="index-buy-again">
+				<div class="index_buy_list">
+					<!---->
+					 <dl>
+                    	<dt>极致美护</dt>
+                        <dd class="first">
+                        	<span class="tag">TOP1</span>
+                        	
+                        	<div class="cover-img" style="background-image: url(images/ft1.jpg);background-size: 152px 140px;"></div>
+                      		     <div class="data">
+                            <p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	毛孔收敛化妆水100ML去黑头粉刺收缩毛孔(黄色 100ml/个)
+                               </a>
+                            </p>
+                            <div class="data-1">
+                            <p class="price clearfix">
+                                <span class="rede1">¥</span><span class="now-price">17.80</span>
+                                <span class="old-price">¥32.00</span></p>
+                            <p class="state">  共 5076 购买<br/>
+                                <a href="/detail-111860.html" target="_blank">  回头率19% >></a>
+                            </p>
+                           </div>
+                        </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP2</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                      		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP3</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP4</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP5</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+					</dl>	
+					 <dl>
+                    	<dt>全球零食</dt>
+                        <dd class="first">
+                        	<span class="tag">TOP1</span>
+                        	    	<div class="cover-img" style="background-image: url(images/cy2.jpg);background-size: 152px 140px;"></div>
+                      		     <div class="data">
+                            <p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 鸡肉香醉童心] 张君雅   小妹妹鸡肉味拉面条饼(65g*2)
+                               </a>
+                            </p>
+                            <div class="data-1">
+                            <p class="price clearfix">
+                                <span class="rede1">¥</span><span class="now-price">17.80</span>
+                                <span class="old-price">¥32.00</span></p>
+                            <p class="state">  共 5076 购买<br/>
+                                <a href="/detail-111860.html" target="_blank">  回头率19% >></a>
+                            </p>
+                           </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP2</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                      		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                            
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP3</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP4</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP5</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                          </div>
+                        </dd>
+					</dl>
+					 <dl>
+                    	<dt>创意生活</dt>
+                        <dd class="first">
+                        	<span class="tag">TOP1</span>
+                        	    <div class="cover-img" style=" background-image: url(images/b4.jpg);background-size: 152px 140px;"></div>
+                      		 <div class="data">
+	                            <p class="title">
+	                                <a href="/detail-111860.html" target="_blank">
+	                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+	                               </a>
+	                            </p>
+	                            <div class="data-1">
+	                            <p class="price clearfix">
+	                                <span class="rede1">¥</span><span class="now-price">17.80</span>
+	                                <span class="old-price">¥32.00</span></p>
+	                            <p class="state">  共 5076 购买<br/>
+	                                <a href="/detail-111860.html" target="_blank">  回头率19% >></a>
+	                            </p>
+	                           </div>
+                           </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP2</span>
+                        		    <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                      		     <div class="data">
+                            	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                            
+                          </div>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP3</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP4</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                        </dd>
+                        <dd class="ex-first">
+                        	<span class="tag">TOP5</span>
+                        	   <div class="img" style=" background-image: url(images/b4.jpg);background-size: 45px 45px;width: 45px;height: 45px;"></div>
+                        	
+                        	<p class="title">
+                                <a href="/detail-111860.html" target="_blank">
+                                    	[台湾 · 全球限量情侣萌礼]  Artiart    新款鱼形钥匙包(粉色绿色)
+                               </a>
+                            </p>
+                        </dd>
+					</dl>
+					<!---->
+				</div>
+			</div>
+		<!--新品黑马-->
+			<h3 class="say_good"><span class="ico-title-1"></span>新品黑马</h3>
+			<div class="index_dark_horse">
+				<div class="dark_horse_list">
+					
+				</div>
+			</div>
+			<!---->
+			<h3 class="say_good lazybtn" style="cursor: pointer;text-align: center;">加载更多</h3>
+		<!--------开始写懒加载------>
+		<div id="lazy">
+			<!--<ul class="lazy_list">
+						<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price">  
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div>  
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv2.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[意大利 · 优雅贵族典范] 范诗哲   云淡风清男士香水(30ml)</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>-->
+		</div>
+		  
+		<!-------内容结束-------->
+		</div> 
+	</div> 
+
+		<!-------------------------底部-------------------------------->
+		<div id="da_footer">
+		</div> 
+		<script>    
+			jQuery(function($) {
+				$("#da_footer").load("../src/html/footer.html", function() {
+					$("#da_footer .ad_1 img").attr({
+						src: "img/link1.png"
+					}); 
+					$("#da_footer .ad_2 img").attr({
+						src: "img/link2.png"
+					});
+					$("#da_footer .ad_3 img").attr({
+						src: "img/zfb.jpg"
+					});
+				});
+
+			});
+		</script>
+	<script src="js/index.js"></script> 
+	</body>
+
+</html>

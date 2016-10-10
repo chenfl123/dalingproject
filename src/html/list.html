@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title>尖货女孩</title> 
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<script src="../assets/jquery-1.12.0.js"></script> 
+		<script src="js/index.js"></script>  
+		
+	</head>   
+	<body> 
+		<div id="da_header">
+			  
+		</div>
+		<script> 
+			jQuery(function($){
+				$("#da_header").load("header.html",function(){
+					$(".da_login").attr({"href":"login.html"});
+					$(".da_register").attr({"href":"registe.html"});
+					$(".dl_logo").attr({"href":"../index.html"});
+				});
+			});
+		</script>
+		<!--------开始写懒加载------>
+		<div id="lazy" >
+			<!--<ul class="lazy_list">
+						<li>
+							<a href="../src/html/detail.html"> 
+								<img src="images/nv1.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price">  
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[韩国 · 皮肤细嫩青春常驻]
+                           				 sum37°  呼吸惊喜水分 水乳面霜 三件套装中小样(20m+20m+10ml)</a></span>
+								</p>
+							</div>  
+						</li>
+						<li>
+							<a href="../src/html/detail.html">
+								<img src="images/nv2.jpg"/>
+								<div class="option">加入购物车<span class="new_car"></span></div>
+							</a>
+							<div class="date"> 
+								<p class="price"> 
+									<span class="collect">人收藏</span>
+									<span class="redel">&yen;</span>	
+									<span class="new_price">89.00</span>
+									<span class="old_price">&yen;199.00</span> 
+								</p>
+								<p class="title" > 
+									<span class="discount">4折</span>
+									<span class="detail"><a href="#">[意大利 · 优雅贵族典范] 范诗哲   云淡风清男士香水(30ml)</a></span>
+								</p>
+							</div> 
+						</li>
+					</ul>-->
+		</div>
+      
+		<!-------------------------底部-------------------------------->
+		<div id="da_footer">
+		</div> 
+		<script> 
+			jQuery(function($){
+				$("#da_footer").load("footer.html"); 
+			});
+		</script>
+		<script src="../js/list.js"></script>
+	</body>
+
+</html>
+	</body>
+</html>

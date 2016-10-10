@@ -1,0 +1,14 @@
+@charset "utf-8";
+.fCarousel{overflow: hidden;position: relative;}
+.fCarousel ul{list-style: none;position:absolute;margin: 0;padding: 0;}
+.fCarousel li{overflow: hidden;}
+.fCarousel li img{display: block;}
+
+.fCarousel .page{position:absolute;right:10px;bottom:10px;padding:10px;}
+.fCarousel .page span{cursor:pointer;display:inline-block;margin:0 5px;width:16px;height:16px;line-height:16px;background-color:#efefef;text-align:center;border-radius:50%;box-shadow:0 0 10px #000;}
+.fCarousel .page span.active{background-color:#C0C0C0;color:#FFCC00;}
+.fCarousel .next,.fCarousel .previous{position:absolute;left:10px;top:50%;margin-top:-25px;width:20px;height:30px;line-height:30px;text-align:center;background-color:#efefef;opacity:0.5}
+.fCarousel .next{left:auto;right:10px;}
+.fCarousel .next:hover,.fCarousel .previous:hover{opacity:0.8;}
+.fCarousel .type-x li{float:left;}
+.fCarousel .type-fade li{position:absolute;top:0;left:0;}

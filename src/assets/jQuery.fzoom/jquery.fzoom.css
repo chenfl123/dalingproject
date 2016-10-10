@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*给外框加类*/
+.fzoom{position: relative;cursor: pointer;}
+/*放大镜*/ 
+.fzoom .fzoom-glass{ position: absolute;left: 0;top: 0;border: 1px solid #FFCC00;background-color: rgba(255,255,0,0.3);}
+/*大图外框*/
+.fzoom-big{position:absolute;width:550px;height:605px;overflow:hidden;background: red;}
+/*大图*/
+.fzoom-big img{position:absolute;left:0;top:0;width: 1200px;height: 1200px;}
+
+

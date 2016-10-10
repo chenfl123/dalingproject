@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>   
+		<meta charset="UTF-8">
+		<title>注册</title> 
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>  
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script src="../js/cookies.js"></script>
+	</head>   
+	<body> 
+		<!-----logo图--------->
+		<div id="login_logo">
+			<div class="logo"><a href="../index.html"><img src="../img/logo.png"/> </a></div> 
+		</div>
+		 <!-------内容----------------------------> 
+		<div class="login_content">   
+			<div class="content">  
+				<!-------------表单框------------------->  
+				<div id="content_form"> 
+					<h2><span class="member"></span>达令会员</h2> 
+					<p class="login_register"><a href="login.html" class="login active" >登录</a><a href="registe.html"  class="regsiter">注册</a></p>
+					<!--注册-->
+					<form  class="dl_register">
+	 
+						<div class="dl_user">   
+							<span class="user"></span>
+						    <input type="text" name="username" id="username" placeholder="请输入您的手机号"/>
+						</div>
+						<!--验证码-->
+						 <div class="dl_code"> 
+						 	<div class="code_border">
+						 		<span class="code"></span> 
+								<input type="text" name="codecheck" id="codecheck" placeholder="请输入验证码" />	
+								 <span class="yz_code">x8r2</span> 
+						 	</div>
+							 
+						 </div> 
+						 <!--短信验证-->
+						  <div class="dl_codetext"> 
+						  	<div class="code_border">
+						 		<span class="text"></span>
+								<input type="text" name="textcheck" id="textcheck" placeholder="请输入短信验证码" />	
+							 	<span class="yz_text">获取短信</span>
+						  	</div>
+						
+						  </div>
+						  <!--设置密码-->
+						   <div class="dl_makecode"> 
+						 	<span class="pass"></span>
+							<input type="password" name="passmake" id="passmake" placeholder="请输入密码" />	
+						 </div>
+						 <!--同意已阅读-->
+						<p class="agree"><input type="checkbox" />我已阅读并同意<a href="#">《达令用户注册协议》</a></p>
+						
+						<button type="submit" class="submit_btn regsiter">注册</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="da_footer">  
+			   
+		</div>
+		<script> 
+			jQuery(function($){
+				$(".dl_register").show();
+				$(".login").removeClass("active");
+				$(".regsiter").addClass("active");
+			});
+			//----------------------------
+		</script>
+		<script src="../js/registe.js"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*详情页*/
+a,span{display: inline-block;}
+#detail_content{margin-top: 20px;width: auto;min-width: 1200px;position: relative;}
+.detail_top{width:1200px;margin: 0 auto;height: 40px;border-bottom: 1px solid #DADADA;line-height: 40px;border-top: 1px solid #DADADA;padding-left: 50px;}
+/*回到首页的图标*/
+.detail_top .dl_index{width: 20px;height: 26px;background: url(../img/ico.png) no-repeat left -38px;vertical-align: middle;}
+.detail_top .index_bg2{width: 20px;height: 26px; background: url(../img/ico_arrow.png) no-repeat right -83px ;vertical-align: middle;margin: 0 20px; }
+ 
+/**/ 
+/*大图展示区*/ 
+.detail_mark{width: 1200px;margin: 20px auto;overflow: hidden;}     
+.detail_mark .shop_show{float: left;}
+.detail_mark .glass_show img{width: 298px;height: 398px;border: 1px solid #DADADA;} 
+.detail_mark .shop_show .shear{width: 320px;height:35px;line-height:35px;} 
+.detail_mark .shop_show .shear a{margin: 10px;}  
+/*标价与购买区*/     
+.detail_mark .shop_price{width: 600px;height: 425px;float: right;margin: 0 20px 20px 20px;}  
+.detail_mark .shop_price dl{margin: 20px 0;line-height:25px;}
+.detail_mark .all_buy{float: right;width: 230px;height: 425px;border: 1px solid #DADADA;padding-top: 10px;}
+.detai_host img{width:200px;height: 100px;display: block;margin: 10px 15px;} 
+/*评论*/
+.detail_mark .comment{overflow: hidden;}
+.detail_mark .comment li{float: left;margin-right: 20px;padding: 0 10px;border-right: 1px solid #dadada;}
+.detail_mark .comment .collect{border: none;}
+/*购买数量*/
+.number{margin: 20px 10px;height: 30px;font-size: 16px;}
+.number .del,.number .add{display: inline-block;width: 20px;height: 20px;text-align: center;color: red;font-size: 22px;line-height: 25px;cursor: pointer;}
+.number .del{margin-left: 20px;}
+ 
+button{background:none;border: none;height: 30px;width: 150px;cursor: pointer;}
+.add_car{background-color: red;color: white;border: 1px solid red;margin-left: 20px;}
+.now_shop{border: 1px solid red;}
+
+/*大家都在买*/
+
+
+/*商品信息*/
+#detail_show{width: 1200px;margin: 20px auto;}
+#detail_show .product{width: 1200px;height: 30px;border-bottom: 1px solid #DADADA;margin-bottom: 20px;}
+#detail_show .product .show_shop,#detail_show .product .shop_service{width: 120px;text-align: center;font-size: 20px;}
+#detail_show .show{width: 1200px;}
+#detail_show .shop{margin: 20px 20px;font-size:18px;color: #999999;}
+#detail_show .service{line-height: 25px;color: grey;border-bottom: 1px solid #DADADA;margin-bottom: 50px;padding-bottom: 20px;}
+#detail_show .service dt{font-size: 20px;margin-bottom: 10px;}
+ 
+
+

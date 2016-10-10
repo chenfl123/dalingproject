@@ -1,0 +1,94 @@
+@charset "utf-8";
+#all_shopc{width: auto;min-width: 1200px;height: 500px;background: #ccc;}
+/*绝对定位层*/
+.all{font-size: 16px;width: 220px;background-color: #654579;position: relative;cursor: pointer;}
+/*相对定位层*/
+#all_subclass{background-color: #e8e3eb;width: 220px;position: absolute;color: #666;height: 479px;/*display: none;*/}
+#all_subclass img{width: 18px;height: 20px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -4px;}
+
+/*设置起始边框*/
+#all_subclass dl{padding: 25px 20px 0;border: 1px solid #e8e3eb;height: 93px;}
+/*鼠标经过的状态，鼠标经过加边框，右边为白色*/
+#all_subclass dl:hover {background-color: #fff;border: 1px solid #654579;border-right-color: #fff;width: 179px;}
+/*四个小盒子的内容的盒子设置，超出隐藏*/
+#all_subclass .category-sort-box {height: 44px;overflow: hidden;font-size: 12px;}
+/*四个dd的盒子*/
+#all_subclass .category-sort {line-height: 22px;height: 43px;position: relative;padding-right: 12px;padding-bottom: 14px;border-bottom: 1px dotted #d9d9d9;width: 168px;}
+/**/
+#all_subclass .bd-none,
+#all_subclass .category-sort.no-bottom {border-bottom: none 0;}
+
+#all_subclass .category-sort a {white-space: nowrap;margin-right: 6px;}
+
+#all_subclass .ico-arrow-2-4 {border-width: 2px 4px;border-style: solid;border-color: transparent transparent transparent #9e9e9e;width: 0;height: 0;line-height: 0;display: block;position: absolute;right: 0;top: 22px;}
+/*第一层 宣传图*/
+#all_subclass .hot-brand {padding-bottom: 40px;}
+#all_subclass .hot-brand-title {font-size: 14px;font-weight: 700;line-height: 40px;}
+#all_subclass .hot-brand-box {margin-left: -13px;}
+
+#all_subclass .category-drop {width: 600px;min-height: 443px;overflow: hidden;position: absolute;left: 220px;top: 0;background-color: #fff;padding: 20px 40px 15px;/*display: none;*/border: 1px solid #654579;}
+#all_subclass .category-data {	overflow: hidden;}
+#all_subclass .brand-img {float: left;width: 140px;height: 70px;margin-left: 13px;}
+/*brand-ad第二层3 广告图*/
+#all_subclass .brand-ad,
+#all_subclass .brand-img-1 {float: right;width: 293px;height: 270px;}
+
+#all_subclass .category-data-1 {overflow: hidden;font-size: 12px;}
+
+#all_subclass .category-data-2 {margin-bottom: 20px;}
+
+#all_subclass .category-data-2:last-child {margin: 0;}
+
+/*第二层1*/
+#all_subclass .item {float: left;width: 80px;height: 22px;line-height: 22px;font-weight: 700;}
+/*第二层2*/
+#all_subclass .data {overflow: hidden;width: 208px;line-height: 22px;}
+#all_subclass .data a {margin-right: 20px;white-space: nowrap;}
+.da-navigation {font-size: 16px;overflow: hidden;padding-left: 30px;}
+.da-navigation li {float: left;padding: 0 10px;margin-right: 37px;}
+.da-navigation li a {color: #fff;}
+.da-navigation li a:hover {color: #c4c4c4;text-decoration: none;}
+
+.da-assure {background-color: #fff;height: 79px;line-height: 79px;border-bottom: solid 1px #e0e0e0;box-shadow: 0 2px 2px #e0e0e0;border-top: solid 1px #d8d8d8;}
+.da-assure .assure-1,
+.da-assure .ico-assure {background: url(images/icon/ico-assure.png) no-repeat;}
+.da-assure ul {width: 960px;margin: 0 auto;}
+.da-assure .assure-1,.da-assure .assure-2,.da-assure .assure-3,
+.da-assure .ico-assure {vertical-align: middle;display: inline-block;width: 30px;height: 30px;margin-right: 7px;}
+.da-assure li {float: left;margin-left: 130px;font-size: 14px;}
+
+.da-assure li:first-child {margin-left: 0;}
+.da-assure .assure-2 {background: url(images/icon/ico-assure.png) -36px 0 no-repeat;}
+.da-assure .assure-3 {background: url(images/icon/ico-assure.png) -73px 0 no-repeat;}
+.da-assure .ico-arrow {background-position: -2px -135px;width: 22px;height: 41px;margin-left: 50px;}
+
+.da-investor {width: 1110px;margin: 0 auto;padding: 24px 0 40px 42px;border-bottom: solid 1px #d8d8d8;}
+
+.da-investor dt {font-size: 18px;line-height: 40px;}
+
+.da-investor dd {font-size: 14px;line-height: 20px;}
+.da-investor .first {width: 660px;float: left;}
+.da-investor .second {overflow: hidden;}
+.da-copyright {text-align: center;padding-bottom: 20px;}
+
+.da-copyright p {padding: 20px 0 0;}
+
+.da-copyright table {margin: 20px auto 0;width: 530px;}
+.da-copyright table img,
+.da-copyright table span {width: 114px;	height: 41px;border: 0;}
+.pagination .page .next,
+.pagination .page .page-each,
+.pagination .page .pre,
+.pagination .page ul li {text-align: center;height: 28px;line-height: 28px;border: 1px solid #e5e5e5;margin-left: 10px;}
+
+.da-copyright table span {display: inline-block;background: url(images/icon/ico_zfb.jpg) no-repeat;
+.da-copyright table a,
+.da-copyright table span {float: left;margin-right: 2px;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8"> 
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/detali.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/jQuery.fzoom/jquery.fzoom.css"/> 
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/> 
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<script src="../assets/jquery-1.12.0.js"></script> 
+		<script src="../assets/jQuery.fzoom/jquery.fzoom.js"></script>
+		<script src="../js/cookies.js"></script>
+		<script>    
+		jQuery(function($){  
+
+		}); 
+		</script>
+	</head>
+	<body>  
+		<div id="da_header">
+			  
+		</div>
+		<script> 
+			jQuery(function($){
+				$("#da_header").load("header.html",function(){
+					$(".da_login").attr({"href":"login.html"});
+					$(".da_register").attr({"href":"registe.html"});
+					$(".dl_logo").attr({"href":"../index.html"});
+					
+				//刷新了购物车中显示物品的件数  
+				if(getCookie("num")==0){
+					 $(".shop_car").find("span").text("0")
+				}else{
+					$(".shop_car").find("span").text(getCookie("num"));}
+		      
+				});
+				 
+			}); 
+		</script>  
+		<div id="detail_content">  
+			<div class="detail_top">
+				<p><a href="#" class="dl_index"></a><span class="index_bg2"></span><a href="#" class="dl_link"> 尖货女孩</a><span class="index_bg2"></span><a class="dl_link" href="#">牛仔裤</a><span class="index_bg2"></span><a class="dl_link" href="#">尖货女孩</a><span></span></p>
+			</div>
+			<div class="detail_mark">
+				<!--货物展示区-->
+				<div class="shop_show">
+					<div class="glass_show">
+						<img  src="../img/detai.jpg" data-big="../img/detai.jpg" />
+					</div>
+					<p class="shear"><a>分享</a><a>收藏</a><a>客户通知书</a></p>
+				</div> 
+				  
+						<!--大家都在买区--> 
+				<div class="all_buy">  
+					<h3 align="center">大家都在买</h3>
+					<div class="detai_host">
+							<ul>
+								<li>
+								<a href="../src/html/detail.html"> 
+									<img src="../images/b11.jpg" /> 
+								</a>
+								<div class="date"> 
+									<p class="price"> 
+										<span class="collect">人收藏</span>
+										<span class="redel">&yen;</span>	
+										<span class="new_price" style="color: red;font-size: 16px;" >89.00</span>
+										<span class="old_price" style="text-decoration: line-through;">&yen;199.00</span> 
+									</p>
+									<p class="title" > 
+										<span class="discount">4折</span>
+										<span class="detail"><a href="#">
+	                           				 [韩国 · 皮肤细嫩青春常驻]  呼吸惊喜水分 水乳面霜 三件套装中小样</a></span>
+									</p>
+								</div>  
+							</li> 
+							<li>
+								<a href="../src/html/detail.html"> 
+									<img src="../images/b15.jpg" /> 
+								</a>
+								<div class="date" style="padding:10px;"> 
+									<p class="price"> 
+										<span class="collect">人收藏</span>
+										<span class="redel">&yen;</span>	
+										<span class="new_price" style="color: red;font-size: 16px;">109.00</span>
+										<span class="old_price" style="text-decoration: line-through;">&yen;199.00</span> 
+									</p>
+									<p class="title"> 
+										<span class="discount">4折</span>
+										<span class="detail"><a href="#">
+	                           				 [韩国 · 皮肤细嫩青春常驻] 呼吸惊喜水分 水乳面霜 三件套装中小样</a></span>
+									</p>
+								</div> 
+							</li> 
+						</ul>
+					</div>
+				</div> 
+				<!--商品购买区-->
+				<div class="shop_price">
+					<h2> [中国 · 帅气牛仔活力十足] 雪黛   韩范破洞宽松长袖牛仔外套图片色(S)</h2>
+					<dl> 
+						<dt >达令价&yen; <sapn class="prices">128.00</sapn></dt>
+						<dd>¥<span class="old">256.00</span> <span class="price-off">5折</span></dd> 
+					</dl>  
+					<!--评论-->    
+					<ul class="comment"> 
+						<li class="grade">评分<span></span></li><li class="talk">评论<span></span></li><li class="collect">50收藏<span></span></li>
+					</ul>
+					 <p class="number">购买数量 <span class="del">-</span><input type="text" value="1" class="numb"  size="2" style="border: 1px solid #999;margin: 0 5px;text-align: center;height: 25px;"/><span class="add">+</span></p> 
+					<p class="shop_day"> <button class="now_shop">立即购买</button><button class="add_car">加入购物车</button></p>
+				</div>
+			</div>
+		</div> 
+		<!--商品信息-->
+		<div id="detail_show">
+			<p class="product"><a href="#" class="show_shop">商品信息</a><a href="#" class="shop_service">售后服务</a></p>
+			<!--图片展示-->
+			<p class="shop">商品参数</p>
+			<div class="show">
+				<img src="../img/FA163E0BD2F9G9KL2XXEOO823R3.jpg"/> 
+			</div>
+			<!--售后服务-->
+			<div class="service">
+				  <dt>售后服务</dt>
+                      <dd class="fl">
+                                                                客服电话： 400-080-1888，客服时间：周一至周日 09:00-18:00 <br>
+                                                                配送服务： 限大陆地区；申通或中通随机发货！订单满55元包邮；首单免运费！ <br>
+                                                                发货时间： 周一到周日全天发货，17点前付款当日发货  <br>
+                                                                相关服务： 至我的订单详情页，可申请退款 <br>
+                                                                微信服务： 微信号：ymallll，及时服务时间：周一至周日 09:00-18:00 <br>
+                     </dd>
+			</div>
+		</div>
+		<div id="da_footer"> 
+		</div>
+		<script> 
+			jQuery(function($){
+				$("#da_footer").load("footer.html");
+			}); 
+		</script>
+		<script src="../js/detail.js"></script> 
+	</body>
+</html>

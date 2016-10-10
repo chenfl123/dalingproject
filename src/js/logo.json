@@ -1,0 +1,24 @@
+[
+	{
+		"id":"L01",
+		"title":"每天一面膜",
+		"category":"化妆品",
+		"imgurl":"img/banner1.jpg",
+		"url":"#",
+		"commentCount":10002
+	},{
+		"id":"L02", 
+		"title":"无敌价，降到底", 
+		"category":"化妆品",
+		"imgurl":"img/banner2.jpg",
+		"url":"#",
+		"commentCount":10000
+	},{
+		"id":"L03",
+		"title":"全家出游季", 
+		"category":"化妆品",
+		"imgurl":"img/banner3.jpg",
+		"url":"#",
+		"commentCount":10000
+	}
+]
