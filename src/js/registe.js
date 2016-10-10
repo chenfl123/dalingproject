@@ -4,6 +4,15 @@ jQuery(function($){
 	//先注册
 	var $user= $("#username");
 	var rep = /^1\d{10}$/; 
+	var $yzusr=$(".yz-users");
+	$user.on("blur",function(){
+		if(rep.test($user.val())==false){
+			$yzusr.show().text("填写正确手机号，惊喜在最后");
+		}else if(rep.test($user.val())){
+			$yzusr.hide();
+		}
+	})
+	
 	
 	//验证码验证
 	var $code=$(".dl_register #codecheck");
@@ -23,6 +32,11 @@ jQuery(function($){
 		 $yzCode.text(str);  
 	});
 	 
+	 $code.on("blur",function(){ 
+	 	if($code.val()!=$yzCode.text()){
+	 		$yzusr.show().text("常向左看看，有惊喜哦");
+	 	}else {$yzusr.hide();}
+	 })
 	
 	//手机验证
 	var $text = $("#textcheck");
@@ -31,6 +45,14 @@ jQuery(function($){
 	
 	//设置密码
 	var $passMake=$("#passmake"); 
+	var repos= /^\w{8,12}$/;
+	var sure=false;
+	 $passMake.on("blur",function(){ 
+	 	if(repos.test($passMake.val())==false){
+	 		$yzusr.show().text("为确保你的帐号安全，密码不能太简单哦");
+	 	}else {$yzusr.hide();sure=true;}
+	 })
+	
 	//提交注册
 	var $btn =$(".dl_register .submit_btn");
 	//点击注册时，如果同意条款，即记下cookies
@@ -39,6 +61,7 @@ jQuery(function($){
 		if(rep.test($user.val())){
 			//如果验证码输入无误
 			if($code.val()==$yzCode.text()){ 
+				if(sure){
 				//如果同意注册条款
 				if($(":checkbox").is(":checked"))
 				{	
@@ -52,8 +75,9 @@ jQuery(function($){
 					if(r==true){
 						window.open("login.html"); 
 					}
-				} 
+				}else{$yzusr.show().text("同意用户协议，可注册成功");} 
 			}
+		}
 	  }else{alert("注册失败");}
 	
 	//-----------------------------------------------

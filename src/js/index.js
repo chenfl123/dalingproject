@@ -15,7 +15,7 @@
 					$ul.appendTo($logolist);
 					
 	//--2 、-等待图片加载完成后对其进行轮播------------
-				 var $list = $("#dl_content");
+				 var $list = $("#dl_bao");
 				//获取ul
 				$ul = $(".dl_carousel ul");
 				//获取第一张图片
@@ -58,7 +58,7 @@
 					timer=setInterval(function(){
 						
 						index++; show();
-					},2000);
+					},3000); 
 				}).trigger("mouseleave");
 			
 				//展示图片

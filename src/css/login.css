@@ -18,8 +18,9 @@
 #content_form  .login_register .active{border-bottom: 1px solid #7d589d;}
 /*登录框*/
 /*手机号*/ 
-#content_form .dl_login{width: 430px;margin: 30px 0;}
-#content_form .dl_login .dl_user,#content_form .dl_login  .dl_password{width: 320px;height: 40px;border: 1px solid #CCCCCC;margin: 10px auto;overflow: hidden;}
+#content_form .dl_login{width: 430px;padding: 30px 0;position: relative;}     
+.yz-usersc{position: absolute;top:10px; left:120px;width: 200px;height: 25px;display: block;border: 1px solid red;text-align: center;line-height: 25px;display: none;}                /* 验证的父定位*/
+#content_form .dl_login .dl_user,#content_form .dl_login  .dl_password{width: 320px;height: 40px;border: 1px solid #CCCCCC;margin: 10px auto;overflow: hidden;position: relative;}
 #content_form .dl_login .user{display: inline-block;width: 30px;height: 28px;background: url(../img/ico.png) right -97px;vertical-align: middle;float: left;}
 #content_form .dl_login #username,#content_form .dl_login #passcheck{width:272px;height:40px;border: none;padding-left: 10px;border-left: 1px solid #ccc;float: right;}
 #content_form .submit_btn{width: 350px;height: 40px;background: #e14958;margin: 10px 35px;border: none;}
@@ -27,9 +28,10 @@
 #content_form .dl_login .pass{display: inline-block;width: 30px;height: 28px;background: url(../img/ico.png) right -121px;vertical-align: middle;}
 #content_form .forget{text-align: right;width: 320px;}
 /*注册框*/ 
-#content_form .dl_register{width: 430px;margin: 30px 0;display: none;}
-#content_form .dl_register .dl_user,#content_form .dl_register .dl_makecode ,#content_form .dl_register .dl_code,
-#content_form .dl_register .dl_codetext,#content_form .dl_register .agree{width: 320px;height: 40px;margin: 10px auto;overflow: hidden;}
+#content_form .dl_register{width: 430px;padding: 30px 0;display: none;position: relative;}
+																/* 验证的父定位*/
+#content_form .dl_register .dl_user,#content_form .dl_register .dl_makecode ,#content_form .dl_register .dl_code,   /* 验证的父定位*/
+#content_form .dl_register .dl_codetext,#content_form .dl_register .agree{width: 320px;height: 40px;margin: 10px auto;overflow: hidden;position: relative;}
 #content_form .dl_register .dl_user,#content_form .dl_register .dl_makecode{border: 1px solid #CCCCCC;}
 
 #content_form .dl_register .dl_makecode .pass,#content_form .dl_register .dl_code .code,#content_form .dl_register .dl_codetext .text{display: inline-block;width: 30px;height: 28px;vertical-align: middle;}
@@ -42,7 +44,7 @@
 				font-size: 18px;background: greenyellow;line-height: 40px;cursor: pointer;}
 #content_form .dl_register .dl_code .yz_code{background: #C8E5BC;cursor: pointer;}  
 #content_form .dl_register .dl_code #codecheck,#content_form .dl_register .dl_codetext #textcheck{width:182px;height:35px;border: none;padding-left: 10px;border-left: 1px solid #ccc;} 
-  
+             /* 验证的父定位*/
  #content_form .dl_register  .code_border{width: 228px;border: 1px solid #ccc;position: relative;}
 /*手机短信验证*/   
 #content_form .dl_register .dl_codetext .text{background: url(../img/ico.png) right bottom;height: 20px;}
@@ -51,7 +53,7 @@
 /*设置密码*/
 #content_form .dl_register .dl_makecode .pass,#content_form .dl_register .dl_code .code{background: url(../img/ico.png) right -122px;}
 
-
+.yz-users{position: absolute;top:10px; left:120px;width: 200px;height: 25px;display: block;border: 1px solid red;text-align: center;line-height: 25px;display: none;}
 
 
 

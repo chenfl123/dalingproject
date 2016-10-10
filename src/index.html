@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/allclass.css"/>
 		<script src="assets/jquery-1.12.0.js"></script>
 		<script src="js/cookies.js"></script>
 	</head>    
@@ -23,7 +24,7 @@
 					$(".shop_car a").attr({"href":"../src/html/shopcar.html"});
 					//获取用户
 					var user=getCookie("user");  
-					console.log(user)
+//					console.log(user)
 					if(user){
 						$(".user_code").text("欢迎用户 "+user); 
 					}
@@ -31,7 +32,8 @@
 			});
 		</script> 
 	<div id="dl_bg"> 
-
+		<div id="dl_bao">
+		<div id="dl_cont">
 		<!---------dl_content---轮播图---------------------->
 		<div id="dl_content">
 			<!-----------轮播图---------------------->
@@ -42,8 +44,26 @@
 					<li class="img3"><img src="img/banner3.jpg" alt="全家出游季" /></li>
 				</ul>-->
 			</div>
+			
+		</div>
+		<div class="all_subclass">
+				
+			</div>
 			<!------------------------>
+			<script>
+				jQuery(function($){
+					$(".all_subclass").load("../src/html/allclass.html #all",function(){
+						$("dl").on("mouseenter",function(){    
+	$(".category-drop",$(this)).show();
+}).on("mouseleave",function(){         
+	$(".category-drop",$(this)).hide();
+})                                     
+					});
+				})
+			</script>
 		</div> 
+		
+		</div>
 		<!-----------内部内容开始------------------>
 		<div id="dl_main">
 			<div class="index_title">

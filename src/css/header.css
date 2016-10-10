@@ -41,12 +41,8 @@ font-size: 12px;background: url(../img/cart-bg2.png) no-repeat ;margin-left: 5px
 #dl_nav{min-width: 1200px;background-color: #333;height: 30px;margin:0 auto;line-height: 30px;position: relative;}
 /*黑条的导航栏*/
 #dl_nav #dl_nav_bar { overflow:hidden;height: 30px;width: 1200px;margin: 0 auto;}  
-#dl_nav #dl_nav_bar .all_item{text-align: center;width: 200px; color: white;height: 30px;background-color:#654579;float: left; }
+#dl_nav #dl_nav_bar .all_item{text-align: center;width: 220px; color: white;height: 30px;background-color:#654579;float: left; }
 #dl_nav #dl_nav_bar .hot_nav{width:900px;overflow: hidden;float: right;height: 30px;}
 #dl_nav #dl_nav_bar .hot_nav li{float: left;font-size: 20px;text-align: center;margin: 0 20px;}     
 #dl_nav #dl_nav_bar .hot_nav li a{color: white;}  
 /* 全部种类*/   
-/*#all_shopc{width: auto;min-width: 1200px;height: 0px;overflow: visible;}  
-#all_shopc #all{width: 1200px;margin: 0 auto;background: #DADADA;position: relative;}
- #all_subclass{height: 480px;width: 200px;background: #CCCCCC;position: absolute;top:0px;left: 0px;}  
-   */

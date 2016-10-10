@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
 	<head>
@@ -6,17 +6,27 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/allclass.css" />
+		<script src="../assets/jquery-1.12.0.js"></script>
+		<script>
+			jQuery(function($){
+				$("dl").on("mouseenter",function(){
+					$(".category-drop",$(this)).show();
+				}).on("mouseleave",function(){
+					$(".category-drop",$(this)).hide();
+				})
+			})
+		</script>
 	</head>
 
-	<body>
+	<body>-->
 		<div id="all_shopc">
 			<div id="all">
 
 				<div id="all_subclass">
 			<!--极致美护-->
 					<dl>
-						<dt><span class="ico-category"><img src="../img/empty.png" style="width: 30px;height: 30px;"></span>极致美护</dt>
-						<dd class="category-sort "><span class="ico-arrow-2-4"></span>
+						<dt><span class="ico-category"><img src="img/empty.png" style="width: 30px;height: 30px;"></span>极致美护</dt>
+						<dd class="category-sort"><span class="ico-arrow-2-4"></span>
 							<div class="category-sort-box">
 								<a href="" target="_blank">面膜</a>
 								<a href="" target="_blank">化妆水</a>
@@ -55,29 +65,29 @@
 							<div>
 								<div class="hot-brand" >
 									<div class="hot-brand-title">极致美护</div>
-									<div class="hot-brand-box  ">
+									<div class="hot-brand-box">
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="" title="bioderma"></div>
+											<div class="brand-img cover-img" style="background: url(images/ad.jpg) no-repeat;" title="bioderma"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="" title="自然乐园"></div>
+											<div class="brand-img cover-img" style="background: url(images/ad2.jpg) no-repeat;" title="自然乐园"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="" title="资生堂"></div>
+											<div class="brand-img cover-img" style="background: url(images/ad3.jpg) no-repeat;" title="资生堂"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="" title="丽得姿"></div>
-
+											<div class="brand-img cover-img" style="background: url(images/ad4.jpg) no-repeat;" title="丽得姿"></div>
+											
 										</a>
 									</div>
 								</div>
 								<div class="category-data">
 									<div class="brand-ad" >
 										<a href="" target="_blank">
-											<div class="brand-img-1 cover-img" style="" title="换季补水大作战"></div>
+											<div class="brand-img-1 cover-img" style="background: url(images/ad5.jpg) no-repeat;" title="换季补水大作战"></div>
 
 										</a>
 									</div>
@@ -139,7 +149,7 @@
 					</dl>
 			<!--全球零食-->		
 					<dl>
-						<dt><span class="ico-category"><img src="../img/empty.png" style="width: 30px;height: 30px;"></span>全球零食</dt>
+						<dt><span class="ico-category"><img src="img/empty.png" style="width: 30px;height: 30px;"></span>全球零食</dt>
 						<dd class="category-sort "><span class="ico-arrow-2-4"></span>
 							<div class="category-sort-box">
 								<a href="" target="_blank">饼干</a>
@@ -168,31 +178,31 @@
 						</dd>
 						<dd class="category-drop">
 							<div>
-								<div class="hot-brand" data-stat-desc="homePage-siderNavAd">
+								<div class="hot-brand">
 									<div class="hot-brand-title">全球零食</div>
-									<div class="hot-brand-box  ">
+									<div class="hot-brand-box">
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad.jpg) no-repeat;" title="多力多滋"></div>
+											<div class="brand-img cover-img" style="background: url(images/eat1.jpg) no-repeat;" title="多力多滋"></div>
 
 										</a>
 										<a href="/keyword=Richeese" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad2.jpg) no-repeat;" title="韩国乐天"></div>
+											<div class="brand-img cover-img" style="background: url(images/eat2.jpg) no-repeat;" title="韩国乐天"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad3.jpg) no-repeat;" title="星巴克"></div>
+											<div class="brand-img cover-img" style="background: url(images/eat3.jpg) no-repeat;" title="星巴克"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad4.jpg) no-repeat;" title="乐天"></div>
+											<div class="brand-img cover-img" style="background: url(images/eat4.jpg) no-repeat;" title="乐天"></div>
 
 										</a>
 									</div>
 								</div>
-								<div class="category-data  ">
-									<div class="brand-ad" data-stat-desc="homePage-siderNavAd">
+								<div class="category-data">
+									<div class="brand-ad">
 										<a href="" target="_blank">
-											<div class="brand-img-1 cover-img" style="background: url(../images/ad5.jpg) no-repeat;" title="出游必备零食"></div>
+											<div class="brand-img-1 cover-img" style="background: url(images/eat5.jpg) no-repeat;" title="出游必备零食"></div>
 
 										</a>
 									</div>
@@ -274,7 +284,7 @@
 					</dl>
 			<!--创意生活--> 
 				<dl>
-						<dt><span class="ico-category"><img src="../img/empty.png" style="width: 30px;height: 30px;"/></span>创意生活</dt>
+						<dt><span class="ico-category"><img src="img/empty.png" style="width: 30px;height: 30px;"/></span>创意生活</dt>
 						<dd class="category-sort "><span class="ico-arrow-2-4"></span>
 							<div class="category-sort-box">
 								<a href="" target="_blank">水杯/保温杯</a>
@@ -326,21 +336,21 @@
 							<div>
 								<div class="hot-brand" data-stat-desc="homePage-siderNavAd">
 									<div class="hot-brand-title">创意生活</div>
-									<div class="hot-brand-box  ">
+									<div class="hot-brand-box">
 										<a href="/" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad.jpg) no-repeat;" title="iPhone"></div>
+											<div class="brand-img cover-img" style="background: url(images/live1.jpg) no-repeat;" title="iPhone"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad2.jpg) no-repeat;" title="白元"></div>
+											<div class="brand-img cover-img" style="background: url(images/live2.jpg) no-repeat;" title="白元"></div>
 
 										</a>
 										<a href="/" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad3.jpg) no-repeat;" title="皓乐齿"></div>
+											<div class="brand-img cover-img" style="background: url(images/live3.jpg) no-repeat;" title="皓乐齿"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad4.jpg) no-repeat;" title="umbra"></div>
+											<div class="brand-img cover-img" style="background: url(images/live4.jpg) no-repeat;" title="umbra"></div>
 
 										</a>
 									</div>
@@ -348,7 +358,7 @@
 								<div class="category-data  ">
 									<div class="brand-ad" data-stat-desc="homePage-siderNavAd">
 										<a href="" target="_blank">
-											<div class="brand-img-1 cover-img" style="background: url(../images/ad5.jpg) no-repeat;" title="好看又实用的必备好货"></div>
+											<div class="brand-img-1 cover-img" style="background: url(images/live5.jpg) no-repeat;" title="好看又实用的必备好货"></div>
 
 										</a>
 									</div>
@@ -452,7 +462,7 @@
 					</dl>
 			<!--时尚配饰-->	
 				<dl>
-						<dt><span class="ico-category"><img src="../img/empty.png" style="width: 30px;height: 30px;"/></span>时尚配饰</dt>
+						<dt><span class="ico-category"><img src="img/empty.png" style="width: 30px;height: 30px;"/></span>时尚配饰</dt>
 						 <dd class="category-sort "><span class="ico-arrow-2-4"></span>
 							<div class="category-sort-box">
 								<a href="/" target="_blank">奢侈品</a>
@@ -502,25 +512,25 @@
 								<a href="/" target="_blank">鞋</a>
 							</div>
 						</dd>
-						<dd class="category-drop">
+					<dd class="category-drop">
 							<div>
 								<div class="hot-brand">
 									<div class="hot-brand-title">时尚配饰</div>
 									<div class="hot-brand-box">
 										<a href="/" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad.jpg) no-repeat;" title="丹尼尔惠灵顿"></div>
+											<div class="brand-img cover-img" style="background: url(images/fad1.jpg) no-repeat;" title="丹尼尔惠灵顿"></div>
 
 										</a>
 										<a href="" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad2.jpg) no-repeat;" title="蔻驰"></div>
+											<div class="brand-img cover-img" style="background: url(images/fad2.jpg) no-repeat;" title="蔻驰"></div>
 
 										</a>
 										<a href="/" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad3.jpg) no-repeat;" title="卡西欧"></div>
+											<div class="brand-img cover-img" style="background: url(images/fad3.jpg) no-repeat;" title="卡西欧"></div>
 
 										</a>
 										<a href="/" target="_blank">
-											<div class="brand-img cover-img" style="background: url(../images/ad4.jpg) no-repeat;" title="INMIX音米"></div>
+											<div class="brand-img cover-img" style="background: url(images/fad4.jpg) no-repeat;" title="INMIX音米"></div>
 
 										</a>
 									</div>
@@ -528,7 +538,7 @@
 								<div class="category-data  ">
 									<div class="brand-ad" data-stat-desc="homePage-siderNavAd">
 										<a href="" target="_blank">
-											<div class="brand-img-1 cover-img" style="background: url(../images/ad5.jpg) no-repeat;" title="演绎最美女人范"></div>
+											<div class="brand-img-1 cover-img" style="background: url(images/fad5.jpg) no-repeat;" title="演绎最美女人范"></div>
 
 										</a>
 									</div>
@@ -642,6 +652,6 @@
 				</div>
 			</div>
 		</div>
-	</body>
+	<!--</body>
 
-</html>
+</html>-->

@@ -1,15 +1,18 @@
 @charset "utf-8";
 
-#dl_bg{background-color:whitesmoke;}
-#dl_content{width: auto;min-width: 1200px;position: relative;margin-bottom: 50px;}
-.dl_carousel{position: relative;overflow: hidden;width: 1200px;margin: 0 auto;height: 480px;}
-.dl_carousel  ul{position: absolute;left: 0;top: 0;overflow: hidden;}
-.dl_carousel  ul li{float: left;width: 1200px;height: 480px;}
-.dl_carousel  ul li img{width: 1200px;height: 480px;} 
+#dl_bg{background-color:whitesmoke;width: auto;min-width: 1200px;}
+#dl_bao{width: auto;min-width: 1200px;}
+#dl_content{width: auto;width: 1200px;margin-bottom: 50px;overflow: hidden;}
+#dl_cont{width: 1200px;margin:0 auto;position:relative;}
+.dl_carousel{position: relative;overflow: hidden;width: 980px;margin: 0 0 0 220px;height: 480px;}
+.dl_carousel  ul{position: absolute;left:0px;top: 0;overflow: hidden;}
+.dl_carousel  ul li{float: left;width: 980px;height: 480px;}
+.dl_carousel  ul li img{width: 980px;height: 480px;} 
  .dl_carousel .page{position:absolute;right:10px;bottom:10px;padding:10px;}
  .dl_carousel .page span{cursor:pointer;display:inline-block;margin:0 5px;width:26px;height:26px;line-height:26px;background-color:#efefef;text-align:center;border-radius:50%;box-shadow:0 0 10px #000;}
  .dl_carousel .page span.active{background-color:#C0C0C0;color:#FFCC00;}  
   
+  .all_subclass{position: absolute;left: 0;top: 0px;}
 /*---------------内部内容开始--------------------------*/
 
 #dl_main{width: auto;min-width: 1200px; } 
