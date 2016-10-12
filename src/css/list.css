@@ -18,3 +18,30 @@
 #lazy ul li .date .title{line-height: 18px;height: 36px;overflow: hidden;color: #666;}
 #lazy ul li .date .title .discount {color: #e34755;}  
 #lazy ul li:hover .option {display: block;} 
+
+/*----------------------------------------*/
+
+/*-----------------------------------*/
+.dl_scroll{position: fixed;height: 100%;min-height: 480px;right: 0;top: 0;text-align: center;color: white;} 
+.dl_scroll #scroll_left{width: 40px;height: 100%;background: #333;float: left;position: relative;}
+.dl_scroll #scroll_left .car-top{position: relative;margin-top: 110px;margin-bottom: 22px;padding: 0 0 10px;}
+.dl_scroll #scroll_left .car-top:hover{background-color:#e34755 ;}
+.dl_scroll  .carline{width: 22px;height: 1px;background: #515151;margin: 0 0 14px 9px;}
+.dl_scroll #scroll_left .ico_car{display: block;background: url(../img/ico_sidebar.png) -26px top no-repeat;width:33px;height: 26px;}
+.dl_scroll #scroll_left .name{padding: 10px;}
+.dl_scroll #scroll_left .left_num{background: #e34755;display: block;width: 20px;height: 22px;line-height: 20px;border-radius: 50%;margin-top: 7px;margin: 0 auto;}
+.dl_scroll #scroll_left .yen{height: 37px;padding-bottom: 10px;width:40px;height:  22px;display: block;background: url(../img/ico_sidebar.png) 6px top no-repeat;} 
+.dl_scroll #scroll_left .yhui{display:none;position:absolute;top:0px;right: 40px;width: 100px;height: 42px;line-height: 42px;background: #666;} 
+.dl_scroll #scroll_left .heart{background: url(../img/ico_sidebar.png) -60px top no-repeat;width: 40px;height: 30px;display: block;margin-bottom:8px;}
+.dl_scroll #scroll_left .shouc{display:none;position:absolute;top:0px;right: 40px;width: 100px;height: 42px;line-height: 42px;background: #666;} 
+
+.dl_scroll #scroll_left .car-mind,.dl_scroll #scroll_left .min_2{position: relative;}
+.dl_scroll #scroll_left .yen:hover,.dl_scroll #scroll_left .heart:hover,.dl_scroll #scroll_left .scro_top:hover{background-color: #E34755;}
+.dl_scroll #scroll_left .scro_top{width: 50px;height: 50px;position: absolute;top: 96%;left: 60%;display:inline-block;margin: -25px 0 0 -25px;color:white;line-height:50px;}
+.dl_scroll #scroll_left .car-last{display: none;}
+.dl_scroll #scroll_left .erwma{background: url(../img/ico-qrcode.png) no-repeat; position: absolute;bottom: 60px;left: 9px;width: 22px;height: 22px;}
+
+.dl_scroll #scroll_right{width:0px;height: 100%;background: #f4f4f4;float: right;color: black;}
+.dl_scroll #scroll_right .close{display: none; position: absolute;right: 10px;top: 10px;width: 16px;height: 16px;cursor: pointer;border: 1px solid #999;}
+.dl_scroll #scroll_right .my_car{text-align: center;line-height: 50px;text-indent: 20px;}
+.dl_scroll #scroll_right .mycar_list{height: 200px;background: url(../img/cart_empty.png) center 46px no-repeat;}

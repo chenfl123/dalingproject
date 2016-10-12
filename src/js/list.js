@@ -39,5 +39,48 @@ $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收�
 					$.ajax();
 			}  
 		
-	})
+	});
+	//-------------------右侧的窗口固定菜单------------------------------
+		
+			$(".car-mind .yen").on("mouseenter",function(){
+				$(".yhui").show();
+			}).on("mouseleave",function(){
+				$(".yhui").hide();
+			});
+			
+			$(".min_2 .heart").on("mouseenter",function(){
+				$(".shouc").show();
+			}).on("mouseleave",function(){
+				$(".shouc").hide();
+			});
+			$(".car-top").on("click",function(){
+				$("#scroll_right").animate({width:"200px"},function(){
+					$(".close").show();
+				})
+			});
+			
+			$(".close").on("click",function(){
+				$("#scroll_right").animate({width:"0px"},function(){
+					$(".close").hide();
+				});
+			});
+			$(".close").on("click",function(){
+				$("#scroll_right").animate({width:"0px"},function(){
+					$(".close").hide();
+				});
+			});
+			//滑动滚动条事件
+			$(window).scroll(function(){
+				var scrollTop =document.documentElement.scrollTop||document.body.scrollTop;
+				if(scrollTop>200){
+					$(".car-last").fadeIn()
+				}else{
+					$(".car-last").fadeOut();
+				}
+			});
+			//点击回到顶部
+			$(".scro_top").on("click",function(){
+					$("html body").animate({"scrollTop":0})
+				})
+	
 });

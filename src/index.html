@@ -23,11 +23,14 @@
 				$("#da_header").load("../src/html/header.html",function(){
 					$(".shop_car a").attr({"href":"../src/html/shopcar.html"});
 					//获取用户
-					var user=JSON.parse(getCookie("strings"));
-					if(user){
-						$(".user_code").text("欢迎用户 "+user[0].user); 
+					var userIndex=JSON.parse(getCookie("strings"));
+					$.each(userIndex, function(idex,item) {
+						if(userIndex){
+						$(".user_code").text("欢迎用户 "+item.user); 
 						$(".da_login").text("退出");
 					}
+					});
+					
 //					var shopnumb=getCookie("num");
 //					if(shopnumb){
 //						$("span",".da_search").text(shopnumb);
@@ -268,7 +271,7 @@
 						</li>
 						<li>
 							<a href="../src/html/detail.html">
-								<img src="images/nv4.jpg"/>
+								<img src="images/JYO2OYKG.jpg"/>
 								<div class="option">加入购物车<span class="new_car"></span></div>
 							</a>
 							<div class="date"> 
@@ -366,7 +369,7 @@
 						</li>
 						<li>
 							<a href="../src/html/detail.html">
-								<img src="images/nv3.jpg"/>
+								<img src="images/d4.jpg"/>
 								<div class="option">加入购物车<span class="new_car"></span></div>
 							</a>
 							<div class="date"> 
@@ -384,7 +387,7 @@
 						</li>
 						<li>
 							<a href="../src/html/detail.html">
-								<img src="images/nv4.jpg"/>
+								<img src="images/ey3.jpg"/>
 								<div class="option">加入购物车<span class="new_car"></span></div>
 							</a>
 							<div class="date"> 
@@ -1426,6 +1429,40 @@
 			});
 		</script>
 	<script src="js/index.js"></script> 
+	<div class="dl_scroll">
+		<div id="scroll_left">
+			<div class="car-top">
+				<p class="carline"></p>
+				<span class="ico_car"></span>
+				<p class="name">购<br />物<br />车</p>
+				<span class="left_num">0</span>
+				
+			</div>
+			<p class="carline"></p>
+			<div class="car-mind">
+				<span class="yen"></span>
+				<strong class="yhui">我的优惠卷</strong>
+				
+			</div>
+			<div class="min_2">
+				<em class="heart" ></em>
+				<strong class="shouc">我的收藏</strong>
+			</div>
+			<!--<p class="carline"></p>-->
+			<div class="erwma">
+					<div class="fuma"></div>
+				</div>
+			<div class="car-last"> 
+				<a class="scro_top"  href="#" title="回到顶部">TOP</a>
+			</div>
+		</div>
+		<div id="scroll_right">
+			<div class="close">&times;</div>
+			<div class="my_car">我的购物车</div>
+			<div class="mycar_list"></div>
+		</div>
+	</div>
+
 	</body>
 
 </html>
