@@ -62,6 +62,7 @@ jQuery(function($) {
 	var $allcheck = $(".check");
 	var $alllast = $(".checkb");
 	var $checkbox = $(":checkbox");
+	
 	$allcheck.on("click", function() {
 		$checkbox.prop("checked", $allcheck.prop("checked"));
 		$(".rede1").text(number);
