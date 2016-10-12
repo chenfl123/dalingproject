@@ -26,6 +26,7 @@ $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收�
 			 	 $a.appendTo($li);
 				 $div.addClass("date").appendTo($li); 
 				 $li.appendTo($ul);
+				 
 			 });
 			$ul.appendTo($lazy);  
 		} 

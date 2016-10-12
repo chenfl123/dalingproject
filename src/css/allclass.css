@@ -7,9 +7,9 @@
 #all_subclass img{width: 18px;height: 20px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -4px;}
 
 /*设置起始边框*/
-#all_subclass dl{padding: 25px 20px 0;border: 1px solid #e8e3eb;height: 93px;}
+#all_subclass dl{padding: 25px 20px 0;border: 1px solid #e8e3eb;height: 93px;} 
 /*鼠标经过的状态，鼠标经过加边框，右边为白色*/
-#all_subclass dl:hover{ background-color: #fff;border-right:1px solid #FFFFFF;border: 1px solid #654579;width: 179px;}
+#all_subclass dl:hover{ background-color: #fff;border: 1px solid #654579;border-right:1px solid #FFFFFF;width: 178px;z-index:2}
 /*#all_subclass dl:hover .category-drop {display: block;border: 1px solid #654579; }*/
 
 
@@ -30,7 +30,7 @@
 #all_subclass .hot-brand-title {font-size: 14px;font-weight: 700;line-height: 40px;}
 #all_subclass .hot-brand-box {margin-left: -13px;}
 /*第二层盒子*/
-#all_subclass .category-drop {width: 600px;min-height: 443px;overflow: hidden;position: absolute;left: 220px;top: 0;background-color: #fff;padding: 20px 40px 15px;display: none;border: 1px solid #654579;}
+#all_subclass .category-drop {z-index: 1; width: 600px;min-height: 443px;overflow: hidden;position: absolute;left: 219px;top: 0;background-color: #fff;padding: 20px 40px 15px;display: none;border: 1px solid #654579;}
 /*#all_subclass .category-data {overflow: hidden;}*/
 #all_subclass .brand-img {float: left;width: 140px;height: 70px;margin-left: 13px;}
 /*brand-ad第二层3 广告图*/

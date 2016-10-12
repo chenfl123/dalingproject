@@ -23,14 +23,18 @@
 				$("#da_header").load("../src/html/header.html",function(){
 					$(".shop_car a").attr({"href":"../src/html/shopcar.html"});
 					//获取用户
-					var user=getCookie("user");  
-//					console.log(user)
+					var user=JSON.parse(getCookie("strings"));
 					if(user){
-						$(".user_code").text("欢迎用户 "+user); 
+						$(".user_code").text("欢迎用户 "+user[0].user); 
+						$(".da_login").text("退出");
 					}
+//					var shopnumb=getCookie("num");
+//					if(shopnumb){
+//						$("span",".da_search").text(shopnumb);
+//					}
 				});
 			});
-		</script> 
+		</script>  
 	<div id="dl_bg"> 
 		<div id="dl_bao">
 		<div id="dl_cont">

@@ -8,6 +8,7 @@ jQuery(function($){
 				height:400
 			});
 	//加入购物车 
+	var goodList=[];
 				//加入购物车的按钮
 			var $addcar = $(".add_car");
 			var i=0;
@@ -37,36 +38,43 @@ jQuery(function($){
 			$copyImg.animate({left:carpos.left,top:carpos.top,width:0,opacity:0},function(){
 				//移出复制的图片
 				$copyImg.remove();
-				
 				//图片src
 				var copysrc = $showImg.attr("src");  
-				
 //				console.log(copysrc);
 				var numbers =parseInt( getCookie("num"));
-				
 				//数量  
 				var num =$(".number").find("input").val(); 
-				
-				if(!isNaN(numbers)){
-					num=parseInt(num)+numbers; 
-				}else{  
-				//名称 
+					//名称 
 				var name =$(".shop_price").find("h2").text();
 				//价格
 				var price = $(".prices").text(); 
 				//折扣
 				var discount = $(".price-off").text();
-				
-//				var car =[{"name":name},{"price":price},{"discount":discount},{"number":num}];
-//				var car ={"name":name};  
+				//id
+				var iId=$showImg.attr("id");
+//				console.log(iId);
+
 				var d=new Date();  
-				d.setDate(d.getDate()+10);  
-				var carcookie =setCookie("name",name,d);    
-				var carcookie =setCookie("price",price,d);
-				var carcookie =setCookie("discount",discount,d);
-				var carcookie =setCookie("copysrc",copysrc,d); 
+				d.setDate(d.getDate()+10); 
+				
+				if(!isNaN(numbers)){
+					num=parseInt(num)+numbers; 
+					
+				}else{  
+			
+				goodList.push({"name":name,"price":price,"discount":discount,"copysrc":copysrc,"id":iId});
+				
+				var carcookie =JSON.stringify(goodList);
+				setCookie("carcookie",carcookie,d);  
+				
+//				var carcookie =setCookie("name",name,d);    
+//				var carcookie =setCookie("price",price,d);
+//				var carcookie =setCookie("discount",discount,d);
+//				var carcookie =setCookie("copysrc",copysrc,d); 
 				
 			}
+				
+				d.setDate(d.getDate()+10);  
 				var carcookie =setCookie("num",num,d);  
 				//购物车中显示物品的件数  
 		      $(".shop_car").find("span").text(getCookie("num"));

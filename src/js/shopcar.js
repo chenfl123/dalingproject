@@ -1,25 +1,26 @@
 
 jQuery(function($){
 	 //获取cookies
-		var name = getCookie("name");  
-		var price = parseInt(getCookie("price")); 
-		var number = getCookie("num"); 
-		var discount = parseInt(getCookie("discount"))/10; 
+	  var carcookie=JSON.parse(getCookie("carcookie"));
+//		var name = getCookie("name");  
+//		var price = parseInt(getCookie("price")); 
 //		console.log(discount);
-		var copysrc = getCookie("copysrc");  
-		
+//		var copysrc = getCookie("copysrc");  
+		var number = getCookie("num"); 
+		var discount = parseInt(carcookie[0].discount)/10; 
+
 		var $car = $("table.date-empty");	 
 		var $table =$("<table/>");   
 		var $tr=$("<tr/>"); 
-		if(name){ 
+		if(carcookie){ 
 			//如果获取到商品其清空原来的列表 
-		 	 $car.hide(); 
+		 	 $car.hide();   
 			$("<td/>").html("<input type='checkbox'/>").appendTo($tr); 
-			var $img =$("<img/>").attr({"src":copysrc,dispaly:"block"})
-			$("<td/>").html($("<p/>").html(name)).addClass("name").append($img).appendTo($tr);
-			$("<td/>").html("&yen;"+price).addClass("price").appendTo($tr);
+			var $img =$("<img/>").attr({"src":carcookie[0].copysrc,dispaly:"block","id":carcookie[0].iId})
+			$("<td/>").html($("<p/>").html(carcookie[0].name)).addClass("name").append($img).appendTo($tr);
+			$("<td/>").html("&yen;"+carcookie[0].price).addClass("price").appendTo($tr);
 			$("<td/>").html("<p><span class='del'>-</span><input type='text' value="+number+" class='numb'  size='2' /><span class='add'>+</span></p>" ).addClass("num").appendTo($tr);   
-			$("<td/>").html("&yen;"+(number*price).toFixed(2)).addClass("total").appendTo($tr);
+			$("<td/>").html("&yen;"+(number*carcookie[0].price).toFixed(2)).addClass("total").appendTo($tr);
 			$("<td/>").html("<a href='#' class='delete'>删除</a>").appendTo($tr);
 			$tr.appendTo($table); 
 		}
@@ -41,11 +42,12 @@ jQuery(function($){
 	});
 	//删除物品
 	$(".delete").on("click",function(){
-		
-		removeCookie("name");
-		removeCookie("price");
+//		removeCookie("discount");
+//		removeCookie("copysrc");
+//		removeCookie("price");		
+		removeCookie("carcookie");
 		removeCookie("num");
-		removeCookie("discount");
+		//初始的空空购物车显示出来
 		$(this).closest("tr").remove();
 		if(number==0||!isNaN(number)){
 			$car.show(); 
@@ -59,8 +61,8 @@ jQuery(function($){
 	  $allcheck.on("click",function(){
 	  	$checkbox.prop("checked",$allcheck.prop("checked"));
 	  	$(".rede1").text(number);
-	  	$(".f20").text(price*number);
-	  	$(".f11").text(parseInt(price*discount/(1-discount))*number); 
+	  	$(".f20").text(carcookie[0].price*number);
+	  	$(".f11").text(parseInt(carcookie[0].price*discount/(1-discount))*number); 
 	  }) 
 	$checkbox.click(function(){
 				var $check =$checkbox.filter(":checked"); 

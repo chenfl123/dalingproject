@@ -43,7 +43,7 @@ jQuery(function($){
 	var $yzText =$(".yz_text");
 	
 	
-	//设置密码
+	//设置密码，限制密码长度为8~12位
 	var $passMake=$("#passmake"); 
 	var repos= /^\w{8,12}$/;
 	var sure=false;
@@ -52,6 +52,8 @@ jQuery(function($){
 	 		$yzusr.show().text("为确保你的帐号安全，密码不能太简单哦");
 	 	}else {$yzusr.hide();sure=true;}
 	 })
+	
+	var goods=[];
 	
 	//提交注册
 	var $btn =$(".dl_register .submit_btn");
@@ -63,14 +65,22 @@ jQuery(function($){
 			if($code.val()==$yzCode.text()){ 
 				if(sure){
 				//如果同意注册条款
-				if($(":checkbox").is(":checked"))
+				if($(":checkbox").is(":checked")) 
 				{	
 					var user =$user.val();
 					var pass =$passMake.val(); 
-					var d= new Date();
-					d.setDate(d.getDate()+10);
-					var username =setCookie("user",user,d,"/");
-					var passwords =setCookie("pass",pass,d);
+					
+					//将用户和密码追加到goods数组
+					goods.push({"user":user,"pass":pass});
+					//把对象转换为字符串
+					var strings=JSON.stringify(goods);
+					console.log(strings);
+					var d= new Date(); 
+					d.setDate(d.getDate()+10); 
+					setCookie("strings",strings,d,"/");
+					
+//					var username =setCookie("user",user,d,"/");
+//					var passwords =setCookie("pass",pass,d);
 					var r=confirm("注册成功！快去登录吧");
 					if(r==true){
 						window.open("login.html"); 

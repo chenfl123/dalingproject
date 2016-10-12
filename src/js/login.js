@@ -3,18 +3,19 @@
 	
 	 var $user = $(".dl_login #username");
 	 var $pass= $(".dl_login #passcheck");
-	 	var olduser=getCookie("user");
-		var oldpass=getCookie("pass"); 
+//	 	var olduser=getCookie("user");
+//		var oldpass=getCookie("pass"); 
 //		console.log(olduser) 
 //		console.log(oldpass) 
+	var strings=JSON.parse(getCookie("strings"));
 		var $yzusr=$(".yz-usersc");
 		var fn=false;
-		if (getCookie("user")==olduser)
+		if (strings)
 		{			
 			$user.on("blur",function(){
-				if($user.val()==olduser){ 
+				if($user.val()==strings[0].user){ 
 					 fn=true;  
-					$pass.val(oldpass); 
+					$pass.val(strings[0].pass); 
 					$yzusr.hide()
 				}else{ 
 					$yzusr.show().text("非常遗憾，未注册成功？");}
