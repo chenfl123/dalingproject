@@ -23,40 +23,32 @@
 				$("#da_header").load("../src/html/header.html",function(){
 					$(".shop_car a").attr({"href":"../src/html/shopcar.html"});
 					//获取用户
-					var userIndex=JSON.parse(getCookie("strings"));
-					$.each(userIndex, function(idex,item) {
-						if(userIndex){
+				var userString=localStorage.getItem('userString');
+				userString =userString ? JSON.parse(userString):[];
+					$.each(userString, function(idex,item) {
+						if(item.user){
 						$(".user_code").text("欢迎用户 "+item.user); 
 						$(".da_login").text("退出");
 					}
 					});
-					
-//					var shopnumb=getCookie("num");
-//					if(shopnumb){
-//						$("span",".da_search").text(shopnumb);
-//					}
 				});
 			});
 		</script>  
 	<div id="dl_bg"> 
 		<div id="dl_bao">
 		<div id="dl_cont">
-		<!---------dl_content---轮播图---------------------->
+	
 		<div id="dl_content">
-			<!-----------轮播图---------------------->
+			
 			<div class="dl_carousel">
-				<!--<ul>
-					<li class="img1"><img src="img/banner1.jpg" alt="每天一面膜" /></li>
-					<li class="img2"><img src="img/banner2.jpg" alt="无敌价，降到底" /></li>
-					<li class="img3"><img src="img/banner3.jpg" alt="全家出游季" /></li>
-				</ul>-->
+				
 			</div>
 			
 		</div>
 		<div class="all_subclass">
 				
 			</div>
-			<!------------------------>
+		
 			<script>
 				jQuery(function($){
 					$(".all_subclass").load("../src/html/allclass.html #all",function(){
@@ -71,7 +63,7 @@
 		</div> 
 		
 		</div>
-		<!-----------内部内容开始------------------>
+		
 		<div id="dl_main">
 			<div class="index_title">
 				<p>发现好货</p>
@@ -91,8 +83,8 @@
 				</ul>
 			</div>
 			
-			 <!--今日上新------------------------>
-			 <div id="index_new">
+			 <!-- 今日上新 -->
+			 			 <div id="index_new">
 				<h2><a href="javascript:;" class="change">换一批<span class="new-chage"></span></a>
 					<span class="title_new"></span>今日上新 <span class="evey_see">早八点上新</span></h2>
 				<div class="new_box"> 
@@ -446,7 +438,7 @@
 					</ul>
 				</div> 
 			</div>
-			   <!--神马值得买-->
+			   <!--神马值得买
 			 <div class="value_buy">
 			 	 <h2><span class="title-worth"></span>神马值得买<span class="help_pic">帮你挑选全球好货</span></h2>
 			 	 <h3><span class="ico-title-1" ></span>全球好货</h3>

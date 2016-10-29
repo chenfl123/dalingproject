@@ -1,15 +1,9 @@
 //注册
 jQuery(function($) {
-	
-		var goods = [];
-//	var strget = JSON.parse(getCookie("strings"));
-//	if(strget)) { 
-//		goods.push(strget);
-////		//将用户和密码追加到goods数组
-////		//		goods.push({"user":user,"pass":pass});
-//	}
 
-	
+	// 判断是否获取到本地的数据
+	var userString =localStorage.getItem('userString');
+	userString =userString ? JSON.parse(userString):[];
 	//先注册
 	var $user = $("#username");
 	var rep = /^1\d{10}$/;
@@ -81,21 +75,18 @@ jQuery(function($) {
 						var user = $user.val();
 						var pass = $passMake.val();
 
-						//						
+							var goods={}					
 						//将用户和密码追加到goods数组
-						goods.push({
-							"user": user,
-							"pass": pass
-						});
-						//把对象转换为字符串
-						var strings = JSON.stringify(goods);
-						console.log(strings);
-						var d = new Date();
-						d.setDate(d.getDate() + 10);
-						setCookie("strings", strings, d, "/");
+						
+							goods.user=user;
+							goods.pass= pass;
+							// 把数据追加到尾部可存取多个数据
+							userString.push(goods);
+					
+						// 设置数据
+						
+						localStorage.setItem('userString',JSON.stringify(userString));
 
-						//					var username =setCookie("user",user,d,"/");
-						//					var passwords =setCookie("pass",pass,d);
 						var r = confirm("注册成功！快去登录吧");
 						if(r == true) {
 							window.open("login.html");

@@ -9,7 +9,7 @@
 /*设置起始边框*/
 #all_subclass dl{padding: 25px 20px 0;border: 1px solid #e8e3eb;height: 93px;} 
 /*鼠标经过的状态，鼠标经过加边框，右边为白色*/
-#all_subclass dl:hover{ background-color: #fff;border: 1px solid #654579;border-right:1px solid #FFFFFF;width: 178px;z-index:2}
+#all_subclass dl:hover{ background-color: #fff;border: 1px solid #654579;border-right:1px solid #FFFFFF;width: 178px;z-index:2;}
 /*#all_subclass dl:hover .category-drop {display: block;border: 1px solid #654579; }*/
 
 

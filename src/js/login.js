@@ -4,14 +4,17 @@
 	 var $user = $(".dl_login #username");
 	 var $pass= $(".dl_login #passcheck");
  
-	var strings=JSON.parse(getCookie("strings"));
-	console.log(strings[0].user)
+	var userString=localStorage.getItem('userString');
+	userString =userString ? JSON.parse(userString):[];
+
+	// console.log(strings[0].user)
 		var $yzusr=$(".yz-usersc");
 		var fn=false;
-		if (strings)
-		{		
+		if (userString.length!=0)
+		{	
+			
 			$user.on("blur",function(){
-					$.each(strings, function(idex,item) {
+					$.each(userString, function(idex,item) {
 				if($user.val()==item.user){ 
 					 fn=true;  
 					$pass.val(item.pass);  
