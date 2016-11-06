@@ -182,7 +182,7 @@ $(".lazybtn").on("click",function(){
 			 	var newprice = Math.ceil(item.price*item.off).toFixed(2);
 //			 	console.log(newprice); 
 			 	
-			 	$("<img/>").attr({src:item.imgurl}).appendTo($a);
+			 	$("<img/>").attr({src:item.imgurl,id:item.id,alt:item.title}).appendTo($a);
 			 	$("<div/>").addClass("option").html("加入购物车<span class='new_car'></span>").appendTo($a); 
 			 	
 $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收藏</span><span class='redel'>&yen;</span><span class='new_price'>"+newprice+"</span><span class='old_price'>&yen;"+item.price.toFixed(2)+"</span>").appendTo($div);
@@ -242,5 +242,23 @@ $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收�
 				});
 		
 		});
+
+	var buystring=localStorage.getItem('buystring');
+	buystring=buystring ? JSON.parse(buystring):[];
+	if (buystring!=[]) {
+		buystring.splice(0,1);
+	}
+	$('img').on('click',function(){
+		var buygoods={};
+		buygoods.src='../'+ $(this).attr('src');
+		buygoods.id=$(this).attr('id');
+		buygoods.title =$(this).attr('alt');
+		buystring.push(buygoods);
+		localStorage.setItem('buystring',JSON.stringify(buystring));
+
+	})
+	
+
+
 })(jQuery);
 	

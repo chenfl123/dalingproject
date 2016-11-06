@@ -42,6 +42,6 @@
 .dl_scroll #scroll_left .erwma{background: url(../img/ico-qrcode.png) no-repeat; position: absolute;bottom: 60px;left: 9px;width: 22px;height: 22px;}
 
 .dl_scroll #scroll_right{width:0px;height: 100%;background: #f4f4f4;float: right;color: black;}
-.dl_scroll #scroll_right .close{display: none; position: absolute;right: 10px;top: 10px;width: 16px;height: 16px;cursor: pointer;border: 1px solid #999;}
+.dl_scroll #scroll_right .close{background: red;color: #fff;display: none; position: absolute;right: 10px;top: 10px;width: 16px;height: 16px;cursor: pointer;border: 1px solid #999;}
 .dl_scroll #scroll_right .my_car{text-align: center;line-height: 50px;text-indent: 20px;}
 .dl_scroll #scroll_right .mycar_list{height: 200px;background: url(../img/cart_empty.png) center 46px no-repeat;}

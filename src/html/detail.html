@@ -28,11 +28,19 @@
 					$(".da_register").attr({"href":"registe.html"});
 					$(".dl_logo").attr({"href":"../index.html"});
 					
-				//刷新了购物车中显示物品的件数  
-				if(getCookie("num")==0){
-					 $(".shop_car").find("span").text("0")
-				}else{
-					$(".shop_car").find("span").text(getCookie("num"));}
+				// //刷新了购物车中显示物品的件数  
+				 var shopnum=0;
+				var goodList = localStorage.getItem('goodList');
+       			 goodList = goodList ? JSON.parse(goodList) : [];
+       			 if(goodList!=[]){
+        			$.each(goodList,function(idx,item){
+        			
+        		shopnum +=parseInt(item.num);
+        	})//购物车中显示物品的件数  
+      
+        }
+
+ 	$(".shop_car").find("span").text(shopnum);
 		      
 				});
 				 
@@ -57,7 +65,7 @@
 					<div class="detai_host">
 							<ul>
 								<li>
-								<a href="../src/html/detail.html"> 
+								<a href="list.html"> 
 									<img src="../images/b11.jpg" /> 
 								</a>
 								<div class="date"> 
@@ -75,7 +83,7 @@
 								</div>  
 							</li> 
 							<li>
-								<a href="../src/html/detail.html"> 
+								<a href="list.html"> 
 									<img src="../images/b15.jpg" /> 
 								</a>
 								<div class="date" style="padding:10px;"> 

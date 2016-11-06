@@ -21,6 +21,20 @@
 					$(".da_login").attr({"href":"login.html"});
 					$(".da_register").attr({"href":"registe.html"});
 					$(".dl_logo").attr({"href":"../index.html"});
+
+						 var shopnum=0;
+				var goodList = localStorage.getItem('goodList');
+       			 goodList = goodList ? JSON.parse(goodList) : [];
+       			 if(goodList!=[]){
+        			$.each(goodList,function(idx,item){
+        			
+        		shopnum +=parseInt(item.num);
+        	})//购物车中显示物品的件数  
+      
+        }
+
+ 	$(".shop_car").find("span").text(shopnum);
+ 	 $('.left_num').text(shopnum);
 				});
 			});
 		</script>

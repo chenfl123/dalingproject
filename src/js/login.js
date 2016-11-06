@@ -19,7 +19,7 @@
 					 fn=true;  
 					$pass.val(item.pass);  
 					$yzusr.hide();
-				}else if($user.val()!=item.user){  
+				}else if(item.user!=$user.val()){  
 					$yzusr.show().text("非常遗憾，未注册成功？");}
 			
 			$(".dl_login").on("click","button",function(e){

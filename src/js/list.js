@@ -1,32 +1,33 @@
 
 jQuery(function($){
 	//定义变量,使加载三次后不再加载
-	var i=0;
+	var i=0;var $lazy = $("#lazy");  
 		$.ajaxSetup({ 
 		url:"../js/goodslist.json",
 		dataType:"json",
 		success:function(res){  
-//			console.log(res);
+ 
 			i++;
-			var $lazy = $("#lazy"); 
+			
 			//创建ul
-			var $ul =$("<ul/>").addClass(".lazy_list"); 
+			var $ul =$("<ul/>").addClass(".lazy_list");  
 			 $.each(res,function(idex,item){ 
 			 	//创建li
 			 	var $li = $("<li/>"); 
-			 	var $a =$("<a/>").attr({href:item.url});
+			 	var $a =$("<a/>").attr({href:item.url}); 
 			 	var $div=$("<div/>");
 			 	var newprice = Math.ceil(item.price*item.off).toFixed(2);
-//			 	console.log(newprice); 
-			 	$("<img/>").attr({src:item.imgurl}).appendTo($a);
+ 
+			 	$("<img/>").attr({src:item.imgurl,id:item.id,alt:item.title}).appendTo($a);
 			 	$("<div/>").addClass("option").html("加入购物车<span class='new_car'></span>").appendTo($a); 
 			 	
 $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收藏</span><span class='redel'>&yen;</span><span class='new_price'>"+newprice+"</span><span class='old_price'>&yen;"+item.price.toFixed(2)+"</span>").appendTo($div);
 			 	$("<p/>").addClass("title").html("<span class='discount'>"+item.off*10+"折</span><span class='detail'><a href='#'>"+item.title+"</a></span>").appendTo($div);
 			 	 $a.appendTo($li);
-				 $div.addClass("date").appendTo($li); 
+				 $div.addClass("date").appendTo($li);  
 				 $li.appendTo($ul);
-				 
+				 // 选中商品
+			
 			 });
 			$ul.appendTo($lazy);  
 		} 
@@ -40,6 +41,13 @@ $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收�
 			}  
 		
 	});
+
+	var buystring=localStorage.getItem('buystring');
+	buystring=buystring ? JSON.parse(buystring):[];
+	if (buystring!=[]) {
+		buystring.splice(0,1);
+	}
+
 	//-------------------右侧的窗口固定菜单------------------------------
 		
 			$(".car-mind .yen").on("mouseenter",function(){
@@ -82,5 +90,14 @@ $("<p/>").addClass("price").html("<span class='collect'>"+item.collect+"人收�
 			$(".scro_top").on("click",function(){
 					$("html body").animate({"scrollTop":0})
 				})
+	$lazy.on('click','img',function(){
+		var buygoods={};
+		buygoods.src=$(this).attr('src');
+		buygoods.id=$(this).attr('id');
+		buygoods.title =$(this).attr('alt');
+		buystring.push(buygoods);
+		localStorage.setItem('buystring',JSON.stringify(buystring));
+
+	})
 	
 });
